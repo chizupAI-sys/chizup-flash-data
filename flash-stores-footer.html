@@ -1,0 +1,118 @@
+<style>
+  .chizup-footer-block {
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 680px;
+    margin: 24px auto;
+    background: #fffdf5;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(255, 183, 0, 0.15);
+    overflow: hidden;
+    border: 1.5px solid #ffe480;
+  }
+
+  .chizup-footer-block__header {
+    background: #ffb700;
+    color: #3a2a00;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .chizup-footer-block__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+
+  .chizup-footer-block__body {
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chizup-fs-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fffbea;
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #ffe480;
+  }
+
+  .chizup-fs-item__icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .chizup-fs-item__info {
+    flex: 1;
+  }
+
+  .chizup-fs-item__name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3a2a00;
+    margin: 0 0 4px 0;
+  }
+
+  .chizup-fs-item__period {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fc655e;
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    .chizup-footer-block__body {
+      padding: 12px 12px 16px;
+    }
+  }
+</style>
+
+<!-- ★ 每月更新這個區塊即可，上方 CSS 不需要動 ★ -->
+<div id="chizup-flash-stores" class="chizup-footer-block">
+  <div class="chizup-footer-block__header">
+    <span>🏬</span>
+    <p class="chizup-footer-block__title">本月百貨快閃據點</p>
+  </div>
+  <div class="chizup-footer-block__body">
+
+    <div class="chizup-fs-item">
+      <span class="chizup-fs-item__icon">📍</span>
+      <div class="chizup-fs-item__info">
+        <p class="chizup-fs-item__name">台北美麗華 B1</p>
+        <p class="chizup-fs-item__period">✨ 04/01 ～ 04/30</p>
+      </div>
+    </div>
+
+    <div class="chizup-fs-item">
+      <span class="chizup-fs-item__icon">📍</span>
+      <div class="chizup-fs-item__info">
+        <p class="chizup-fs-item__name">桃園台茂購物中心 5F</p>
+        <p class="chizup-fs-item__period">✨ 03/03 ～ 05/31</p>
+      </div>
+    </div>
+
+    <div class="chizup-fs-item">
+      <span class="chizup-fs-item__icon">📍</span>
+      <div class="chizup-fs-item__info">
+        <p class="chizup-fs-item__name">高雄夢時代 B1</p>
+        <p class="chizup-fs-item__period">✨ 04/10 ～ 05/13</p>
+      </div>
+    </div>
+
+    <div class="chizup-fs-item">
+      <span class="chizup-fs-item__icon">📍</span>
+      <div class="chizup-fs-item__info">
+        <p class="chizup-fs-item__name">台北忠孝SOGO B1</p>
+        <p class="chizup-fs-item__period">✨ 04/23 ～ 05/13</p>
+      </div>
+    </div>
+
+  </div>
+</div>

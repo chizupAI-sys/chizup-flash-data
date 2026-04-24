@@ -23,5 +23,5 @@
 ## Widget 公開網址
 
 ```
-https://raw.githubusercontent.com/[你的GitHub帳號]/chizup-flash-data/main/flash-stores.json
+https://raw.githubusercontent.com/chizupAI-sys/chizup-flash-data/main/flash-stores.json
 ```

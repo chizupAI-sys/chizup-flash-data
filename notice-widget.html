@@ -1,0 +1,222 @@
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  .chizup-notice {
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 680px;
+    margin: 24px auto;
+    background: #fffdf5;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(255, 183, 0, 0.15);
+    overflow: hidden;
+    border: 1.5px solid #ffe480;
+  }
+
+  .chizup-notice__header {
+    background: #ffb700;
+    color: #3a2a00;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .chizup-notice__header-icon {
+    font-size: 22px;
+  }
+
+  .chizup-notice__header-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  .chizup-notice__body {
+    padding: 20px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fffdf5;
+  }
+
+  .chizup-block {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    border-left: 4px solid #ffb700;
+    box-shadow: 0 2px 8px rgba(255, 183, 0, 0.10);
+  }
+
+  .chizup-block__title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3a2a00;
+    margin: 0 0 10px 0;
+  }
+
+  .chizup-block__text {
+    font-size: 14px;
+    color: #5a4a00;
+    line-height: 1.9;
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .chizup-block__text strong,
+  .chizup-em {
+    color: #fc655e;
+    font-weight: 700;
+  }
+
+  .chizup-block__highlight {
+    background: #fff8d6;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #5a4a00;
+    line-height: 1.9;
+    border: 1px solid #ffe480;
+  }
+
+  .chizup-block__highlight strong {
+    color: #fc655e;
+  }
+
+  .chizup-formula {
+    display: inline-block;
+    background: #ffb700;
+    color: #3a2a00;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .chizup-store-fallback a {
+    color: #fc655e;
+    font-weight: 700;
+  }
+
+  .chizup-flash-btn {
+    display: inline-block;
+    margin-top: 8px;
+    background: #ffb700;
+    color: #3a2a00;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .chizup-flash-btn:hover {
+    background: #e6a500;
+    color: #3a2a00;
+    text-decoration: none;
+  }
+
+  /* 門市自取子區塊 */
+  .chizup-pickup-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chizup-pickup-block {
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #fffbea;
+    border: 1px solid #ffe480;
+  }
+
+  .chizup-pickup-block__label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #3a2a00;
+    background: #ffb700;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 1px 8px;
+    margin: 0 0 8px 0;
+  }
+
+  .chizup-pickup-block__text {
+    font-size: 14px;
+    color: #5a4a00;
+    line-height: 1.8;
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  @media (max-width: 480px) {
+    .chizup-notice__body {
+      padding: 16px 14px 18px;
+    }
+    .chizup-block {
+      padding: 14px 14px;
+    }
+  }
+</style>
+
+<div class="chizup-notice">
+  <div class="chizup-notice__header">
+    <span class="chizup-notice__header-icon">📋</span>
+    <p class="chizup-notice__header-title">訂購注意事項 &amp; 自取資訊</p>
+  </div>
+
+  <div class="chizup-notice__body">
+
+    <!-- 區塊 1：現做說明 -->
+    <div class="chizup-block">
+      <p class="chizup-block__title">🍰 蛋糕是現做的！</p>
+      <p class="chizup-block__text">我們在你下訂單之後才開始做蛋糕，保證新鮮！
+結帳時可以選你想要收到蛋糕的日期，
+<span class="chizup-em">最快 3 個工作天後</span>，最晚 90 天後。</p>
+    </div>
+
+    <!-- 區塊 2：提前收貨提醒 -->
+    <div class="chizup-block">
+      <p class="chizup-block__title">⚠️ 要過生日或辦派對？請提前 1～2 天收貨！</p>
+      <p class="chizup-block__text">送貨有時候會遇到塞車或其他狀況，
+建議提前 1～2 天把蛋糕收到手比較安心！</p>
+      <div class="chizup-block__highlight">
+        <strong>📌 記住這個公式：</strong><br>
+        <span class="chizup-formula">想用蛋糕的日期 − 2 天 = 你要選的到貨日</span><br><br>
+        🌟 舉例：你 <strong>1月10日</strong> 要用蛋糕<br>
+        → 到貨日期請選 <strong>1月8日</strong><br>
+        如果只能選 1月9日，蛋糕可能 <strong>1月11日 才到</strong>哦！
+      </div>
+    </div>
+
+    <!-- 區塊 3：運費說明 -->
+    <div class="chizup-block">
+      <p class="chizup-block__title">🚚 運費說明</p>
+      <p class="chizup-block__text">配送方式：黑貓低溫宅急便（低溫保鮮配送）
+運費：台灣本島統一 160 元
+<span class="chizup-em">單筆滿 2,000 元免運費！</span></p>
+    </div>
+
+    <!-- 區塊 4：自取說明 -->
+    <div class="chizup-block">
+      <p class="chizup-block__title">🏠 想親自來拿蛋糕？有兩種方式！</p>
+      <div class="chizup-pickup-section">
+        <div class="chizup-pickup-block">
+          <p class="chizup-pickup-block__label">【門市自取（士林）】</p>
+          <p class="chizup-pickup-block__text">時間：週一～週五　<span class="chizup-em">下午 1 點～6 點</span>
+（國定假日不開放，請記得避開）
+地址：台北市士林區承德路四段80巷27號</p>
+        </div>
+        <div class="chizup-pickup-block">
+          <p class="chizup-pickup-block__label">【本月百貨快閃據點】</p>
+          <a href="#Footer" class="chizup-flash-btn">📍 點我看百貨快閃據點</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
